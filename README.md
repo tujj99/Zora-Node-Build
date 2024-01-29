@@ -13,15 +13,15 @@ Zora node strategy by ardizor
 
 • 接下来安装 Docker Compose
 
-`sudo mkdir -p /etc/apt/keyrings`
-`curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg`
-`echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null`
-`sudo chmod a+r /etc/apt/keyrings/docker.gpg`
+```sudo mkdir -p /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo chmod a+r /etc/apt/keyrings/docker.gpg```
 
 • 安装 Docker 及其依赖项：
 
-`sudo apt-get update`
-`sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose`
+```sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose```
 
 • 克隆 Conduit Github 存储库，即部署 Zora 节点的基础设施
 
