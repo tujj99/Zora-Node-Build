@@ -68,7 +68,7 @@ nano .env
 ```
 
 • 在 .env 文件中，用 Alchemy 账户的 API 密钥替换 <HTTP://...>。
-  你可以在你的 Alchemy 账户上找到你的 API 密钥。
+  你可以在你的 Alchemy http://alchemy.com 账户上找到你的 API 密钥。
 • 按CTRL+X, 再按Y ，再回车关闭文件
 
 • 运行节点
